@@ -1,0 +1,6 @@
+c:\users\flavio.leal\documents\visual studio 2012\Projects\ConsoleLerCSV\ConsoleLerCSV\bin\Debug\ConsoleLerCSV.exe.config
+c:\users\flavio.leal\documents\visual studio 2012\Projects\ConsoleLerCSV\ConsoleLerCSV\bin\Debug\ConsoleLerCSV.exe
+c:\users\flavio.leal\documents\visual studio 2012\Projects\ConsoleLerCSV\ConsoleLerCSV\bin\Debug\ConsoleLerCSV.pdb
+c:\users\flavio.leal\documents\visual studio 2012\Projects\ConsoleLerCSV\ConsoleLerCSV\obj\Debug\ConsoleLerCSV.csprojResolveAssemblyReference.cache
+c:\users\flavio.leal\documents\visual studio 2012\Projects\ConsoleLerCSV\ConsoleLerCSV\obj\Debug\ConsoleLerCSV.exe
+c:\users\flavio.leal\documents\visual studio 2012\Projects\ConsoleLerCSV\ConsoleLerCSV\obj\Debug\ConsoleLerCSV.pdb
