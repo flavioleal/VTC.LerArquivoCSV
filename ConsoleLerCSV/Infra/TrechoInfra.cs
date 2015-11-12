@@ -1,5 +1,6 @@
 ﻿using ConsoleLerCSV.Dominio;
 using ConsoleLerCSV.Dominio.Contratos;
+using ConsoleLerCSV.Dominio.TrechoBO;
 using ConsoleLerCSV.Negocio;
 using System;
 using System.Collections.Generic;
@@ -11,6 +12,7 @@ namespace ConsoleLerCSV.Infra
 {
     public class TrechoInfra : ITrechoCrud
     {
+        TrechoBO trechoBO = new TrechoBO();
         private Contexto _contexto;
 
         public TrechoInfra()
@@ -28,8 +30,8 @@ namespace ConsoleLerCSV.Infra
 
             foreach (var split in splits)
             {
-               
-                trechos.Add(new Trecho
+
+                var trecho = new Trecho
                 {
                     BR = split[0],
                     UF = split[1],
@@ -38,11 +40,15 @@ namespace ConsoleLerCSV.Infra
                     LocalFim = split[4],
                     kmInicial = Double.Parse(split[5]),
                     KmFinal = Double.Parse(split[6]),
-                    
-                   
-                });
-                
+
+                };
+
+                if (trechoBO.TrechoEhValido(trecho))
+                {
+                    trechos.Add(trecho);
+                }
             }
+
             return trechos;
         }
 

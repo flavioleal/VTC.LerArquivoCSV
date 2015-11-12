@@ -20,7 +20,6 @@ namespace ConsoleLerCSV
             var result = trechoInfra.ObterTodos();
 
             Console.ReadKey();
-
         }
     }
 }

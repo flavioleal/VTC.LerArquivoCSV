@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleLerCSV.Dominio.BO;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -7,8 +8,10 @@ using System.Threading.Tasks;
 
 namespace ConsoleLerCSV.Negocio
 {
+    
     public class CsvReader
     {
+        MessageBO messageBO = new MessageBO();
         private StreamReader _rd;
 
         public CsvReader(string caminho)
@@ -31,7 +34,6 @@ namespace ConsoleLerCSV.Negocio
                     continue;
                 }
                 linhas.Add(linha);
-                Console.WriteLine(linha);
             }
 
             return linhas; 

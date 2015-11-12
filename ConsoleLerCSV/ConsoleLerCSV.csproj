@@ -41,8 +41,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dominio\BO\MessageBO.cs" />
     <Compile Include="Dominio\Contratos\ITrechoCrud.cs" />
     <Compile Include="Dominio\Trecho.cs" />
+    <Compile Include="Dominio\BO\TrechoBO.cs" />
     <Compile Include="Infra\Contexto.cs" />
     <Compile Include="Infra\TrechoInfra.cs" />
     <Compile Include="Negocio\CsvReader.cs" />
